@@ -40,14 +40,18 @@
     }
   </style>
   <body>
+    {%include 'navbar.html'%}
     <!-- <div id="container"> -->
+    <img id="banner" src="/static/banner.jpg" class="img-fluid">
     <div class="container">
-    <h1 class="text-center mt-5 mb-5">{{company_name}} Careers</h1>
-    <img id="banner" src="https://a72dddc8-7a1f-40a5-b565-10c38ddb47d9-00-2o41j2l6mfbc9.sisko.replit.dev/static/banner.jpg" class="img-fluid">
-    <h2 class="text-center mt-2 mb-4">About NewEra</h2>
+    <h1 class="text-center mt-3 mb-5">{{company_name}} Careers</h1>
     <!-- <p class="bodytext"> -->
-    <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+    <div class="row">
+    <div class="lead col-md-9"> The New Era Cap Company (commonly known simply as New Era) is an American headwear company headquartered in Buffalo, New York. It was founded in 1920 by Ehrhardt Koch. New Era has over 500 different licenses in its portfolio. Since 1993, they have been the exclusive baseball cap supplier for Major League Baseball (MLB).
+</div>
+      <div class="d-none d-md-block col-md-3"">
+      <img src="/static/People.jpg" class="img-thumbnail rounded"></div>
+    </div>
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
     <!-- <p class="bodytext">TODO - Show the jobs here</p> -->
     <div>
@@ -59,9 +63,10 @@
 
     <!-- <div style="text-align:center;"> -->
     <div class="text-center">
-    <button class="btn btn-primary btn-lg">Contact Us</button>
+    <a href="mailto:customer.care@neweracap.com?subject=Question%20about%20job%20openings&body=Name%3A%0D%0A%0D%0AQuestion%3A%20%3CEnter%20your%20Question%20here%3E" class="btn btn-primary btn-lg">Contact Us</button>
     </div>
       <p class="mt-4">Copyright-NewEra</p>
     </div>
+    {%include 'footer.html'%}
   </body>
 </html>
