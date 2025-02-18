@@ -1,0 +1,67 @@
+<!DOCTYPE <html>
+<html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head><title>NewEra Careers</title></head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- <style>
+    h1{
+      font-size: 40px;
+      font-family: Roboto;
+      font-weight: normal;
+      color: rgb(50,50,50); 
+      text-align: center;
+    }
+    #banner{
+      width:100%;
+      height:360px;
+      object-fit:cover;
+    }
+    h2{
+      font-family: Roboto;
+      font-size: 32px;
+      color: rgb(100,100,100); 
+      text-align: center;
+      font-weight: normal;
+    }
+    .bodytext{
+      font-family: Roboto;
+      color: rgb(80,80,80);
+    }
+    #container{
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  </style> -->
+  <style>
+    #banner{
+      width:100%;
+      height:320px;
+    }
+  </style>
+  <body>
+    <!-- <div id="container"> -->
+    <div class="container">
+    <h1 class="text-center mt-5 mb-5">{{company_name}} Careers</h1>
+    <img id="banner" src="https://a72dddc8-7a1f-40a5-b565-10c38ddb47d9-00-2o41j2l6mfbc9.sisko.replit.dev/static/banner.jpg" class="img-fluid">
+    <h2 class="text-center mt-2 mb-4">About NewEra</h2>
+    <!-- <p class="bodytext"> -->
+    <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+    <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+    <!-- <p class="bodytext">TODO - Show the jobs here</p> -->
+    <div>
+      {%for job in jobs%}
+      {% include 'jobitem.html' %}
+      {%endfor%}
+      </div>
+    
+
+    <!-- <div style="text-align:center;"> -->
+    <div class="text-center">
+    <button class="btn btn-primary btn-lg">Contact Us</button>
+    </div>
+      <p class="mt-4">Copyright-NewEra</p>
+    </div>
+  </body>
+</html>
